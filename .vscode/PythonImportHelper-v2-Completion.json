@@ -1,0 +1,55 @@
+[
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.express",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.express",
+        "description": "plotly.express",
+        "detail": "plotly.express",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "logo",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "logo = Image.open(\"assets/logo.png\")\nst.image(logo, width=200)\n# --- TITRE ---\nst.markdown(\"<h1 style='text-align: center;'>SamaStat - Veille statistique intelligente</h1>\", unsafe_allow_html=True)\n# --- MENU DE NAVIGATION ---\nst.sidebar.title(\"Navigation\")\npage = st.sidebar.radio(\"Aller à\", [\"Accueil\", \"Indicateurs\", \"Prévisions\", \"À propos\"])\n# --- ACCUEIL ---\nif page == \"Accueil\":\n    st.header(\"Vue d'ensemble\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "page",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "page = st.sidebar.radio(\"Aller à\", [\"Accueil\", \"Indicateurs\", \"Prévisions\", \"À propos\"])\n# --- ACCUEIL ---\nif page == \"Accueil\":\n    st.header(\"Vue d'ensemble\")\n    st.markdown(\"Bienvenue sur SamaStat, la plateforme citoyenne de données locales pour le Sénégal.\")\n# --- INDICATEURS ---\nelif page == \"Indicateurs\":\n    st.header(\"📊 Indicateurs par région\")\n    # Chargement des données Excel\n    try:",
+        "detail": "app",
+        "documentation": {}
+    }
+]
